@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset = "UTF-8" content="width=device-width, initial-scale=1"> 
+    <title>
+        Welcome to Vivid Vision
+    </title>
+    <link rel="stylesheet" type="text/css" href="./vvsite.css">
+</head>
+
+<body>
+    <!---Creating Tab Headers-->
+    <div id="AboutUs" class="tabcontent" style="background-color: darkgoldenrod;">
+        <h1>About Us </h1>
+        <p>VIVID VISION.<br> Former Ko Ko Win Optical. <br>Your vision is our vision.</p>
+    </div>
+
+    <div id="Founder" class="tabcontent" style="background-color:maroon;">
+        <h1> Founder </h1>
+        <p> U Zaw Lin. <br> More than 20 years of experience in the optical field.</p>
+    </div>
+
+    <div id="ContactUs" class="tabcontent" style="background-color: darkblue">
+        <h1>Contact Us</h1>
+        <p>Near Nandawin Zay, Taung Oakalar, Yangon, Myanmar. <br> +95 9798159375</p>
+    </div>
+
+    <!--To make the buttons clickable-->
+    <button class="tablink" onclick="openTab('AboutUs', this,'darkgoldenrod')" id="defaultOpen">About Us</button>
+    <button class="tablink" onclick="openTab('Founder',this,'maroon')">Founder</button>
+    <button class="tablink" onclick="openTab('ContactUs',this,'darkblue')">Contact Us</button>
+
+    <div class="intro">
+        <p>Our shop promises you the best quality. See below for what is available! </p>
+    </div>
+
+    
+
+    <!----SlideShow for the pictures start-->
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img src="./images/glasses.jpg">
+            <div class="caption">A wide variety of glasses</div>
+        </div>
+
+        <div class="mySlides">
+            <img src="./images/sunglasses.jpg">
+            <div class="caption">Sunglasses to protect you from the rays</div>
+        </div>
+
+        <div class="mySlides">
+            <img src="./images/contact lense.jfif">
+            <div class="caption">Lightweight, hygienic</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <script src="./vvsite.js"></script>
+
+    <!---Slide show for the pictures: end-->
+    <br>
+    <div class="MoreInfo"> 
+        <p>Want to learn more about us? Don't hesitate and sign up to receive weekly updates!</p>
+    </div>
+
+    <!--Sign up form -->
+    <form action="action_page.php" style="border: 1px solid#ccc">
+        <div class="container">
+            <h3>Please fill in this form to learn more about us.</h3>
+            <hr>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="password"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="password" required>
+
+            <label for="repeatPsw"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="repeatPsw" required>
+
+            <p>By creating an account you will receive weekly updates about <a href="#" style="color:cadetblue">
+            our sales and products</a>.</p>
+
+            <div class="clearfix">
+                <button type="button" class="cancel">Cancel</button>
+                <button type="button" class="signup">Sign Up</button>
+            </div>
+        </div>
+    </form>
+
+
+
+
+
+
+</body>
+</html>
